@@ -1,9 +1,9 @@
-let http = require("http");
+let httpModule = require("http");
 
-let server = http.createServer((req,res)=>{
-    req.end("Hello World");
+let server = httpModule.createServer((req,res)=>{
+    res.end("Hello World");
 });
 
-server.listen(4200, ()=>{
+server.listen(4100, ()=>{
     console.log("Server Running");
 })
